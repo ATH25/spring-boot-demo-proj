@@ -54,7 +54,23 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<!-- for some reasons i had to add it to fix the error regarding maven-surefire.
+			this error is only in STE Version: 3.9.9.RELEASE  -->
+			
+			<!-- 
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			    <version>3.0.0-M1</version>
+			    <configuration>
+			        <testFailureIgnore>true</testFailureIgnore>
+			    </configuration>
+			</plugin>
+			 -->
+			
 		</plugins>
+		
 	</build>
 
 </project>
